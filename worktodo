@@ -1,0 +1,13 @@
+To do:
+1. Finish Extracting Images
+2. Image Clustering
+3. Regression Analysis
+4. Analyze Data
+Challenges:
+1. I initially hoped to use reddit for this, but I could not find a package that would
+allow me to scrape reddit. I switched to instagram, but I did not have enough permissions,
+so I came back to reddit. 
+2. When I thought I finally found a data scraper, the topics that I chose
+were blocked by the platform, due to it being a sensitive topic
+3. I have only been able to obtain 102 observations, when I adjust my code to obtain more,
+way less observations come up. The most I have been able to obtain are 102.
