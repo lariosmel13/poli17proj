@@ -8,7 +8,7 @@ Image Clustering
 * [ResNet50 model](https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html)
 
 Linear Regression
-* Gradient Boosting
+* [Gradient Boosting](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html)
 
 ## Hypothesis
 1. After observing different college subreddits, some possible category clusters will be: memes, active protests, images featuring cops, school communications, screenshots from other social media.
