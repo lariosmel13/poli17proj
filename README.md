@@ -5,7 +5,7 @@ In the era of digital communication, social media platforms have become more tha
 
 ## Methods
 Image Clustering
-* ResNet50 model
+* [ResNet50 model](https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html)
 
 Linear Regression
 * Gradient Boosting
