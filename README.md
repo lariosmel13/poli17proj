@@ -6,6 +6,4 @@ This project aims to delve into image based engagement on Reddit through image c
 
 
 
-Methods
-* Image Clustering
-* Regression Analysis
+
