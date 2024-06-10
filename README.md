@@ -53,7 +53,25 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * one-hot-encoding
 
 ## Experiments
- 
+### Image Clusters
+* Tried k=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+* Ended up choosing k=4, clusters made the most sense at k=4
+* Hard to determine theme from other clusters
+### Linear Regression
+* Tried: Random Forest, Linear Regression, Ridge Regression
+* Ended up using Gradient Boosting Regression, because it performed the best.
+## Evalution
+### Linear Regression
+* Coefficients:
+ID_Misc : 0.03411019786445862
+ID_Protest : 0.029837666143125045
+ID_School : 0.021450598118525465
+ID_Screenshots : 0.014661104828747051
+* For the coefficient associated with ID_Misc (0.0341), meaning that images categorized as "Miscellaneous" contribute moderately positively to the model's predicition, suggesting that these images have a notable influence on the outcome.
+* The coefficient for ID_Protest (0.0298) implies that images depicting protests hold a slightly lower positive influence on the model's prediction compared to Miscellaneous images, suggesting that the presence of protest-related imagery still contributes positively to the prediction, but to a slightly lesser extent.
+* The coefficient for ID_School (0.0215) suggests that images related to both Miscellaneous and Protest categories, indicating that such images contribute significantly less to the prediction outcome.
+* The coefficient for ID_Screenshot (0.0147) indicates that screenshots have the lowest positive influence among the categories considered, suggesting that the presence of screenshots has a relatively weaker imapct on the model's prediction compared to other image categories
+
 ## Discussion
 ### Challenges and Limitations
 * The Reddit API only allowed accesss to recent post data
