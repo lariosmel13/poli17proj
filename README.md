@@ -22,7 +22,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * import pandas as pd
 * from PIL import Image
 * import requests
-### Accessed Reddit API
+### [Reddit API Documentation](https://www.reddit.com/dev/api/)
 * keywords = ['palestine','protest','israel','encampent']
 * subreddits = ['ucla', 'UCSD', 'UCSB', 'UCSC', 'UCI', 'UCDavis', 'ucmerced', 'ucr', 'berkeley','columbia','Harvard','yale','princeton','georgetown','nyu','UIUC','aggies','ucf','Purdue','ASU','rit','uofm','rutgers','VirginiaTech','csuf','CSULB','CSULA','humboldtstate','Drexel','EmersonCollege','Emory','IndianaUniversity','mit','riceuniversity','stanford','PennStateUniversity','Berklee','bostoncollege','BostonU','Bowdoin','BrownU','Caltech','calarts','CalPoly','chapmanuniversity','Cornell','gwu','gatech','LSU','LMU','washu','VirginiaTech','Vanderbilt','UoP','udub','USC','usfca','UPenn','seattleu','scrippscollege','scad','SJSU','Pepperdine','pace','OregonStateUniv','jhu','harveymudd','Fordham','CUNY','claremontcolleges','Grinnell','Gonzaga','cmu','CalPolyPomona','CSUS','AmericanU','amherstcollege','baylor']
 * Formed df with Subreddit, Image URL, Upvotes, Date
