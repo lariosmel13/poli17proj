@@ -68,19 +68,20 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 ### Linear Regression
 * Tried: Random Forest, Linear Regression, Ridge Regression
 * Ended up using Gradient Boosting Regression, because it performed the best.
-## Evalution
+
+## Evaluation
 ### Linear Regression
 * Coefficients:
- * Intercept: 0.23190770384441436
- * ID_Misc : 0.03411019786445862
- * ID_Protest : 0.029837666143125045
- * ID_School : 0.021450598118525465
- * ID_Screenshots : 0.014661104828747051
- * Intercept: Presents baseline predicted number of Reddit Upvotes. If a Reddit post contained none of the types of images, the model predicts a baseline number of upvotes of approximately 0.232
- * ID_Misc: Model expects an increase in number of upvotes by approximately 0.034 units for Miscellaneous Posts
- * ID_Protest: An Active Protest image expects and increase in predicted number of upvotes by 0.030 units.
- * ID_School: School Communications images expect an increase in predicted number of upvotes by 0.021 units.
- * ID_Screenshots: Screenshots type imafe predicts an increase in number of upvotes by 0.015 units.
+   * Intercept: 0.23190770384441436
+   * ID_Misc : 0.03411019786445862
+   * ID_Protest : 0.029837666143125045
+   * ID_School : 0.021450598118525465
+   * ID_Screenshots : 0.014661104828747051
+   * Intercept: Presents baseline predicted number of Reddit Upvotes. If a Reddit post contained none of the types of images, the model predicts a baseline number of upvotes of approximately 0.232
+* ID_Misc: Model expects an increase in number of upvotes by approximately 0.034 units for Miscellaneous Posts
+* ID_Protest: An Active Protest image expects and increase in predicted number of upvotes by 0.030 units.
+* ID_School: School Communications images expect an increase in predicted number of upvotes by 0.021 units.
+* ID_Screenshots: Screenshots type imafe predicts an increase in number of upvotes by 0.015 units.
 
 Main image categories found in posts were Miscellaneous (memes, maps, protest posters), Active Protests, School Communications and Screenshots. In this particular study the most succesful images were Active Protest images, however a regression analysis was done to predict potential enagement. The intercept provides the expected number of upvotes for a post without any specific type of images, while the coefficients quantify the additional impact of including specific type of images on the predicted number of upvotes. 
   
