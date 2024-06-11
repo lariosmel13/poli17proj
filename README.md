@@ -70,7 +70,6 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * Ended up using Gradient Boosting Regression, because it performed the best.
 
 ## Evaluation/Results
-### Linear Regression
 * Coefficients:
    * Intercept: 0.23190770384441436
    * ID_Misc : 0.03411019786445862
