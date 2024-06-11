@@ -69,7 +69,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * Tried: Random Forest, Linear Regression, Ridge Regression
 * Ended up using Gradient Boosting Regression, because it performed the best.
 
-## Evaluation
+## Evaluation/Results
 ### Linear Regression
 * Coefficients:
    * Intercept: 0.23190770384441436
@@ -83,7 +83,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * ID_School: School Communications images expect an increase in predicted number of upvotes by 0.021 units.
 * ID_Screenshots: Screenshots type imafe predicts an increase in number of upvotes by 0.015 units.
 
-Main image categories found in posts were Miscellaneous (memes, maps, protest posters), Active Protests, School Communications and Screenshots. In this particular study the most succesful images were Active Protest images, however a regression analysis was done to predict potential enagement. The intercept provides the expected number of upvotes for a post without any specific type of images, while the coefficients quantify the additional impact of including specific type of images on the predicted number of upvotes. 
+Main image categories found in posts were Miscellaneous (memes, maps, protest posters), Active Protests, School Communications and Screenshots. In this particular study the most succesful images were Active Protest images, however a regression analysis was done to predict potential enagement. The intercept provides the expected number of upvotes for a post without any specific type of images, while the coefficients quantify the additional impact of including specific type of images on the predicted number of upvotes. In this study Active Protests were the most enagaging similarly to the study done by Lu and Peng, however the regression model predicts that Miscellaneous images (memes, maps, protest posters) will have the greatest positive effect on engagement with Active Protests coming in second.
   
 
 
@@ -96,4 +96,14 @@ Main image categories found in posts were Miscellaneous (memes, maps, protest po
 ### Future Work
 * Retry project with access to more posts/older posts
 * Observe more protests
+
+## Related Work
+The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests by Yingdan Lu & Yilang Peng: Analyzed approximately ten million tweets related to three social mediated protests (BLM, Stop Asian Hate, Women's March) to investigate the impact of different image types on message engagement throughout various stage protests. They founf that posts containing images and videos generally attracted higher audience engagement compared to text-only posts. Utilizing unsupervised image clustering, the researchers identified four categories: crowd-based protest photos, non-crowd-protest human photos, non-human photos and non-photograph visuals. They observed heterogenous effects on audience engagement across these content categories and protests, with visuals producing more engagement during the ignition phase of the protest than before or after.
+
+## References
+* Lu, Y., & Peng, Y. (2024). The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests. Political Communication, 1–28. https://doi.org/10.1080/10584609.2024.2317951
+* PyTorch,"resnet50model", Retrieved from https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html, 2024
+* scikit-learn.(2024).GradientBoostingRegressor Documentation. Retrieved from https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html
+* PRAW (Python Reddit API Wrapper).(2024). "PRAW Documentation," Retrieved from https://praw.readthedocs.io/en/stable/
+
 
