@@ -40,7 +40,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * import matplotlib.pyplot as plt
 ### Preprocessing
 * Images:
-* * resize:(224,224)
+  * resize:(224,224)
   * convert from BGR to RGB
   *  used preprocess_input to preprocess images according to ResNet50 model
   *  extracted features using model
@@ -57,22 +57,37 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * Tried k=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
 * Ended up choosing k=4, clusters made the most sense at k=4
 * Hard to determine theme from other clusters
+### Found Most Upvotes
+* Used Normalized data set:
+ * Added upvotes by image type
+ * Used .idxmax to find which one had the most upvotes
+  * Misc: 5.668547
+  * Protest: 11.971039
+  * School: 3.825000
+  * Screenshots: 4.557554
 ### Linear Regression
 * Tried: Random Forest, Linear Regression, Ridge Regression
 * Ended up using Gradient Boosting Regression, because it performed the best.
 ## Evalution
 ### Linear Regression
 * Coefficients:
-** Intercept: 0.23190770384441436
-** ID_Misc : 0.03411019786445862
-** ID_Protest : 0.029837666143125045
-** ID_School : 0.021450598118525465
-** ID_Screenshots : 0.014661104828747051
-** Intercept: Presents baseline predicted number of Reddit Upvotes. If a Reddit post contained none of the types of images, the model predicts a baseline number of upvotes of approximately 0.232
+ * Intercept: 0.23190770384441436
+ * ID_Misc : 0.03411019786445862
+ * ID_Protest : 0.029837666143125045
+ * ID_School : 0.021450598118525465
+ * ID_Screenshots : 0.014661104828747051
+ * Intercept: Presents baseline predicted number of Reddit Upvotes. If a Reddit post contained none of the types of images, the model predicts a baseline number of upvotes of approximately 0.232
+ * ID_Misc: Model expects an increase in number of upvotes by approximately 0.034 units for Miscellaneous Posts
+ * ID_Protest: An Active Protest image expects and increase in predicted number of upvotes by 0.030 units.
+ * ID_School: School Communications images expect an increase in predicted number of upvotes by 0.021 units.
+ * ID_Screenshots: Screenshots type imafe predicts an increase in number of upvotes by 0.015 units.
+
+Main image categories found in posts were Miscellaneous (memes, maps, protest posters), Active Protests, School Communications and Screenshots. In this particular study the most succesful images were Active Protest images, however a regression analysis was done to predict potential enagement. The intercept provides the expected number of upvotes for a post without any specific type of images, while the coefficients quantify the additional impact of including specific type of images on the predicted number of upvotes. 
   
 
 
 ## Discussion
+
 ### Challenges and Limitations
 * The Reddit API only allowed accesss to recent post data
 * Only one protest was observed
