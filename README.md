@@ -47,10 +47,10 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
   *  normalized features
 
 ## Linear Regression Preprocessing
-* manually added image cluster category to each post in df
-* made new df with only image cluster category and Upvotes
-* applied min-max normalization since there were different amounts of each category
-* one-hot-encoding
+* Manually added image cluster category to each post in df
+* Made new df with only image cluster category and Upvotes
+* Applied min-max normalization since there were different amounts of each category
+* One-hot-encoding
 
 ## Experiments
 ### Image Clusters
