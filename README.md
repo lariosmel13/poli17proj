@@ -56,7 +56,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 ### Image Clusters
 * Tried k=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
 * Ended up choosing k=4, clusters made the most sense at k=4
-* Hard to determine theme from other clusters
+* Hard to determine theme from larger amount of clusters
 ### Found Most Upvotes
 * Used Normalized data set:
  * Added upvotes by image type
@@ -97,7 +97,7 @@ Main image categories found in posts were Miscellaneous (memes, maps, protest po
 * Observe more protests
 
 ## Related Work
-The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests by Yingdan Lu & Yilang Peng: Analyzed approximately ten million tweets related to three social mediated protests (BLM, Stop Asian Hate, Women's March) to investigate the impact of different image types on message engagement throughout various stage protests. They founf that posts containing images and videos generally attracted higher audience engagement compared to text-only posts. Utilizing unsupervised image clustering, the researchers identified four categories: crowd-based protest photos, non-crowd-protest human photos, non-human photos and non-photograph visuals. They observed heterogenous effects on audience engagement across these content categories and protests, with visuals producing more engagement during the ignition phase of the protest than before or after.
+The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests by Yingdan Lu & Yilang Peng: Analyzed approximately ten million tweets related to three social mediated protests (BLM, Stop Asian Hate, Women's March) to investigate the impact of different image types on message engagement throughout various stage protests. They found that posts containing images and videos generally attracted higher audience engagement compared to text-only posts. Utilizing unsupervised image clustering, the researchers identified four categories: crowd-based protest photos, non-crowd-protest human photos, non-human photos and non-photograph visuals. They observed heterogenous effects on audience engagement across these content categories and protests, with visuals producing more engagement during the ignition phase of the protest than before or after.
 
 ## References
 * Lu, Y., & Peng, Y. (2024). The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests. Political Communication, 1–28. https://doi.org/10.1080/10584609.2024.2317951
