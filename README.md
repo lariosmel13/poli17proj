@@ -50,7 +50,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * Manually added image cluster category to each post in df
 * Made new df with only image cluster category and Upvotes
 * Applied min-max normalization since there were different amounts of each category
-* One-hot-encoding
+
 
 ## Experiments
 ### Image Clusters
