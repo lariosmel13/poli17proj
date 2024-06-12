@@ -80,7 +80,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
 * ID_Misc: Model expects an increase in number of upvotes by approximately 0.034 units for Miscellaneous Posts
 * ID_Protest: An Active Protest image expects and increase in predicted number of upvotes by 0.030 units.
 * ID_School: School Communications images expect an increase in predicted number of upvotes by 0.021 units.
-* ID_Screenshots: Screenshots type imafe predicts an increase in number of upvotes by 0.015 units.
+* ID_Screenshots: Screenshots type images predict an increase in number of upvotes by 0.015 units.
 
 Main image categories found in posts were Miscellaneous (memes, maps, protest posters), Active Protests, School Communications and Screenshots. In this particular study the most succesful images were Active Protest images, however a regression analysis was done to predict potential enagement. The intercept provides the expected number of upvotes for a post without any specific type of images, while the coefficients quantify the additional impact of including specific type of images on the predicted number of upvotes. In this study Active Protests were the most enagaging similarly to the study done by Lu and Peng, however the regression model predicts that Miscellaneous images (memes, maps, protest posters) will have the greatest positive effect on engagement with Active Protests coming in second.
   
