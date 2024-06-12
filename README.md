@@ -7,12 +7,12 @@ In the era of digital communication, social media platforms have become more tha
 Image Clustering
 * [ResNet50 model](https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html)
 
-Linear Regression
+Regression Analysis
 * [Gradient Boosting](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html)
 
 ## Hypothesis
 1. After observing different college subreddits, some possible category clusters will be: memes, active protests, images featuring cops, school communications, screenshots from other social media.
-2. For the linear regression, it is hypothesized that images featuring cops will reflect the most positive enagement. This hypothesis stems from the national media coverage and public discourse triggered by the intervention of law enforcement at encampents.
+2. For regression analysis, it is hypothesized that images featuring cops will reflect the most positive enagement. This hypothesis stems from the national media coverage and public discourse triggered by the intervention of law enforcement at encampents.
 
 The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests by Yingdan Lu and Yilang Peng found that crowd-based photos predicted the most engagement when observing the Black Lives Matter, Stop Asian Hate and Women's March protests on Twitter. It is likely that the same will be found when studying Reddit posts, however it will be interesting to see what other types of images produce the most engagement.
 
@@ -46,7 +46,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
   *  extracted features using model
   *  normalized features
 
-## Linear Regression Preprocessing
+## Regression Analysis Preprocessing
 * Manually added image cluster category to each post in df
 * Made new df with only image cluster category and Upvotes
 * Applied min-max normalization since there were different amounts of each category
@@ -65,7 +65,7 @@ The Mobilizing Power of Visual Media Across Stages of Social-Mediated Protests b
   * Protest: 11.971039
   * School: 3.825000
   * Screenshots: 4.557554
-### Linear Regression
+### Regression Analysis
 * Tried: Random Forest, Linear Regression, Ridge Regression
 * Ended up using Gradient Boosting Regression, because it performed the best.
 
